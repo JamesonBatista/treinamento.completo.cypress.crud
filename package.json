@@ -1,0 +1,24 @@
+{
+  "name": "treinamento.completo.cypress.crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesonBatista/treinamento.completo.cypress.crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesonBatista/treinamento.completo.cypress.crud/issues"
+  },
+  "homepage": "https://github.com/JamesonBatista/treinamento.completo.cypress.crud#readme",
+  "dependencies": {
+    "cypress": "^13.15.0",
+    "cypress-crud": "^4.1.1"
+  }
+}

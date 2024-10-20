@@ -1,0 +1,188 @@
+
+{
+  "create cy.crud": {
+    "scope": "javascript,typescript",
+    "prefix": "crud",
+    "body": [
+      "cy.crud('$1')",
+      "$2"
+    ],
+    "description": "create cy.crud"
+  },
+  "create path": {
+    "scope": "javascript,typescript",
+    "prefix": "pathExpect",
+    "body": [
+      "{path: ''}",
+      "$2"
+    ],
+    "description": "create cy.crud"
+  },
+  "create as": {
+    "scope": "javascript,typescript",
+    "prefix": "asExpect",
+    "body": [
+      "as: ''",
+      "$2"
+    ],
+    "description": "create cy.as"
+  },
+  "create eq": {
+    "scope": "javascript,typescript",
+    "prefix": "eqExpect",
+    "body": [
+      "eq: ''",
+      "$2"
+    ],
+    "description": "create cy.as"
+  },
+  "create search": {
+    "scope": "javascript,typescript",
+    "prefix": "searchExpect",
+    "body": [
+      "search: ''",
+      "$2"
+    ],
+    "description": "create cy.as"
+  },
+  "create alias": {
+    "scope": "javascript,typescript",
+    "prefix": "asExpect",
+    "body": [
+      "alias: ''",
+      "$2"
+    ],
+    "description": "create cy.as"
+  },
+  "create schema": {
+    "scope": "javascript,typescript",
+    "prefix": "schemaExpect",
+    "body": [
+      "schema: ''",
+      "$2"
+    ],
+    "description": "create cy.as"
+  },
+  "create snippet for path": {
+    "scope": "javascript,typescript",
+    "prefix": ".p",
+    "body": [
+      "{path:'$1'}",
+      "$2"
+    ],
+    "description": "create cy.crud"
+  },
+  "create snippet for reqs": {
+    "scope": "javascript,typescript",
+    "prefix": "requests",
+    "body": [
+      "Requests('$1', function () {});",
+      "$2"
+    ],
+    "description": "create cy.crud"
+  },
+  "create snippet for path eq": {
+    "scope": "javascript,typescript",
+    "prefix": ".pe",
+    "body": [
+      "{path:'$1', eq: ''}",
+      "$2"
+    ],
+    "description": "create cy.crud"
+  },
+  "create snippet for path expects": {
+    "scope": "javascript,typescript",
+    "prefix": "ex",
+    "body": [
+      "expects:[{path: ''}]",
+      "$2"
+    ],
+    "description": "create cy.crud"
+  },
+  "create cy.save": {
+    "scope": "javascript,typescript",
+    "prefix": ".save",
+    "body": [
+      ".save({path:'$1'})"
+    ],
+    "description": "create cy.save"
+  },
+  "create cy.response": {
+    "scope": "javascript,typescript",
+    "prefix": ".bodyResponse",
+    "body": [
+      ".bodyResponse({path:'$1'})"
+    ],
+    "description": "create cy.response"
+  },
+  "create cy.bodyResponse": {
+    "scope": "javascript,typescript",
+    "prefix": ".resp",
+    "body": [
+      ".response({path:'$1'})"
+    ],
+    "description": "create cy.crud"
+  },
+  "create cy.res": {
+    "scope": "javascript,typescript",
+    "prefix": ".res",
+    "body": [
+      ".res({path:'$1'})"
+    ],
+    "description": "create cy.crud"
+  },
+  "create cy.expects": {
+    "scope": "javascript,typescript",
+    "prefix": ".expects",
+    "body": [
+      ".expects({path:'$1'})"
+    ],
+    "description": "create cy.expects"
+  },
+  "create cy.schema": {
+    "scope": "javascript,typescript",
+    "prefix": ".schema",
+    "body": [
+      ".schema({schema:'$1'})"
+    ],
+    "description": "create cy.expects"
+  },
+  "generate test describes its": {
+    "scope": "javascript,typescript",
+    "prefix": "test_des_its",
+    "body": [
+      "import {faker, clone, crudStorage} from '../support/e2e'; ",
+      "describe('', function () {",
+      "",
+      "it('', function () {});});",
+      "",
+      "",
+      "function rescue_save(params) {",
+      " if (params) {",
+      "return crudStorage.save[params];",
+      " }",
+      "return JSON.stringify(crudStorage.save);",
+      "  }",
+    ],
+    "description": "generate full test describes its"
+  },
+  "generate test describes its text": {
+    "scope": "javascript,typescript",
+    "prefix": "complete_test",
+    "body": [
+      "import {faker, clone, crudStorage} from '../support/e2e'; ",
+      "describe('$1', () => { ",
+
+      "it('$1', () => {    });  });",
+      "",
+      "",
+      "function rescue_save(params) {",
+      " if (params) {",
+      "return crudStorage.save[params];",
+      " }",
+      "return JSON.stringify(crudStorage.save);",
+      "  }",
+    ],
+    "description": "generate full test describes its text"
+  }
+}

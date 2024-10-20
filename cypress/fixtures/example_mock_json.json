@@ -1,0 +1,8 @@
+
+{
+  "response": {
+    "status": 201,
+    "body": { "id": 7, "name": "mock response" },
+    "headers": { "Content-Type": "application/json" }
+  }
+}

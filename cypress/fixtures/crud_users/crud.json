@@ -1,0 +1,15 @@
+[
+  { "text": "get all users", "get": "localhost/users" },
+  {
+    "post": "localhost/users",
+    "body": { "name": "faker.name", "email": "faker.email" },
+    "save": "id:::id_user"
+  },
+  { "get": "localhost/users/{id_user}", "expect": "name" },
+  {
+    "text": "put in id {id_user}",
+    "put": "https://reqres.in/api/users/2",
+    "body": { "name": "faker.name" }
+  },
+  { "text": "delete in id {id_user}", "delete": "localhost/users/{id_user}" }
+]

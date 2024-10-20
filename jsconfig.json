@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // "target": "ES6",
+    //"module": "commonjs",
+    //"lib": ["es6", "dom"],
+    // "baseUrl": "./",
+    // "paths": {
+    //   "@/*": ["./path/to/aliases/*"]
+    // },
+    "types": ["cypress"]
+  },
+  // "include": ["**/*"],
+  "exclude": ["node_modules"]
+}

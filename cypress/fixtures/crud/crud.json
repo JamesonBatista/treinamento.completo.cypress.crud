@@ -1,0 +1,24 @@
+[
+  {
+    "text": "get all list users",
+    "get": "localhost/users"
+  },
+  {
+    "text": "get all list users",
+    "get": "localhost/users/2",
+    "save": "email:::useremail"
+  },
+  {
+    "text": "post using {useremail}",
+    "post": "localhost/users",
+    "body": { "name": "faker.name", "email": "{useremail}" },
+    "saveRequest": "name",
+    "expect": { "path": "email", "as": "emailuser" },
+    "save": "id"
+  },
+  {
+    "text": "get id {id}",
+    "get": "localhost/users/{id}",
+    "expect": "id"
+  }
+]
